@@ -52,17 +52,23 @@ a:visited {
         margin: 0;
         padding: 0;
     }            
-        .container-projetos, .container-sobre, .container-contatos{
+        .container-projetos, .container-sobre, .container-contatos, .container-footer{
             width: 100%;
-            margin: 5px;
             text-align: center;
             background-image: url('https://img.reintech.io/variants/mcfrgmq8lph9895vth2vpwxpbc97/e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b');
             background-size: cover;
+            margin: 5px 0px 5px 0px;
+            font-size: 14px;
+        }
+        .container-sobre{            
+            text-align: justify;
+            font-size: 14px;
         }
         .container-background{
-            background-color: rgba(220, 220, 220, 0.3);
+            background-color: rgba(255, 255, 255, 0.6);
             border-radius: 3px;
             padding: 20px;
+            margin: 0;
         }
             .container-cards {
                 display: flex;
@@ -71,9 +77,10 @@ a:visited {
                 gap: 10px;
                 justify-content: center;
                 padding: 20px;
+                margin: 0;
             }                
             .card {
-                background-color: rgba(220, 220, 220, 0.5);
+                background-color: rgba(220, 220, 220, 0.6);
                 border: 1px solid #ddd;
                 border-radius: 8px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
@@ -82,22 +89,13 @@ a:visited {
                 transition: transform 0.2s;
                 width: 300px;
                 border-top: 10px dotted black;
+                font-size: 14px;
             }
                 .container-card{
                     display: flex;
                     flex-direction: row;
                 }
-                    /* .left-card {
-                        width: 60%;
-                        text-align: left;
-                        transition: transform 0.2s;
-                    }
-                    .right-card {
-                        flex: 1;
-                        background-image: url("https://raw.githubusercontent.com/robinsonmourao/todo-manager-api/main/app/assets/images/demo-tasks.png");
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                    } */
+                
             .card:hover {
                 transform: scale(1.02);
                 background-color: rgba(150, 231, 255, 0.5);
@@ -106,8 +104,3 @@ a:visited {
                 color: brown;
                 text-align: end;
             }
-
-    .container-footer{
-        background-color: azure;
-        text-align: center;
-    }
