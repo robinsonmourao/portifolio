@@ -1,7 +1,7 @@
 const projetos = [
     {
         "name": "ToDo Manager",
-        "description": "O ToDo Manager é uma aplicação web simples para gerenciamento de tarefas (todo list) com autenticação de usuário. Ele permite que os usuários criem, visualizem, atualizem e excluam suas próprias tarefas de forma segura e eficiente.",
+        "description": "É uma aplicação web simples para gerenciamento de tarefas (todo list) com autenticação de usuário. Ele permite que os usuários criem, visualizem, atualizem e excluam suas próprias tarefas de forma segura e eficiente.",
         "ilustracoes": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#rootsignup",
         "funcionalidades": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#funcionalidades",
         "status": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#status-de-desenvolvimento",
