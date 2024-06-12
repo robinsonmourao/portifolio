@@ -1,0 +1,114 @@
+html{
+    background-color: #3C5B6F;
+}
+.container-header, 
+.container-body, 
+.container-contatos, .container-sobre, .container-projetos,
+.container-footer{
+    border-radius: 3px;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 3px;
+    padding: 0;
+}
+a:visited {
+    color: #0000FF;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+    .container-header{
+        background-color: transparent;
+        padding: 15px;
+    }
+        .header-links{
+            display: flex;
+            justify-content: center;
+        }
+            [class$='link']{
+                padding: 10px;
+                margin: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                background-color: azure;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 10);
+            }
+                [class$='link']:hover{
+                    background-color: cadetblue;
+                    color: white;
+                }
+
+    
+    .container-body{
+        background-color: aliceblue;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }            
+        .container-projetos, .container-sobre, .container-contatos{
+            width: 100%;
+            margin: 5px 0 5px 0;
+            /* padding: 5px; */
+            text-align: center;
+            background-image: url('https://img.reintech.io/variants/mcfrgmq8lph9895vth2vpwxpbc97/e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b');
+            background-size: cover;
+        }
+        .container-background{
+            background-color: rgba(220, 220, 220, 0.3);
+            backdrop-filter: blur(3px);
+            border-radius: 3px;
+        }
+            .container-cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                padding: 10px;
+            }                
+            .card {
+                background-color: rgba(220, 220, 220, 0.5);
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+                padding: 5px;
+                text-align: left;
+                transition: transform 0.2s;
+                width: 300px;
+                backdrop-filter: blur(3px);
+            }
+                .container-card{
+                    display: flex;
+                    flex-direction: row;
+                }
+                    /* .left-card {
+                        width: 60%;
+                        text-align: left;
+                        transition: transform 0.2s;
+                    }
+                    .right-card {
+                        flex: 1;
+                        background-image: url("https://raw.githubusercontent.com/robinsonmourao/todo-manager-api/main/app/assets/images/demo-tasks.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    } */
+            .card:hover {
+                transform: scale3d(1.05,1.05,1.05);
+                background-color: rgba(150, 231, 255, 0.5);
+            }
+            .card-tecnologias{
+                color: brown;
+                text-align: end;
+            }
+
+    .container-footer{
+        background-color: azure;
+        text-align: center;
+    }
