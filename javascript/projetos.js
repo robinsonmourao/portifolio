@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         parentCardBuilder(projeto, 'funcionalidades', 'Funcionalidades', parentCard, containerCard, card);
         parentCardBuilder(projeto, 'status', 'Status de desenvolvimento', parentCard, containerCard, card);
         parentCardBuilder(projeto, 'extra', 'Mídia extra', parentCard, containerCard, card);
+        parentCardBuilder(projeto, 'RoteiroTestes', 'RoteiroDeTestes 🆕', parentCard, containerCard, card);
+        parentCardBuilder(projeto, 'E2ETests', 'Repositório de Testes End-to-end 🆕', parentCard, containerCard, card);
 
         if (projeto.tags) {
             const cardTags = document.createElement('div');

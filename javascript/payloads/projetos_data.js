@@ -1,18 +1,20 @@
-const projetos = [
+const projetos = [    
+    {
+        "name": "ERPRIR",
+        "description": "Projeto de sistema ERP freelancer para empresa anônima",
+        "ilustracoes": "https://github.com/robinsonmourao/ERP-RIR#telas",
+        "status": "https://github.com/robinsonmourao/ERP-RIR#status-de-desenvolvimento",
+        "RoteiroTestes": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests/RoteiroDeTestes.md",
+        "E2ETests": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests",
+        "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #Gherkin #Capybara #Cucumber #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS"
+    },
     {
         "name": "ToDo Manager",
         "description": "É uma aplicação web simples para gerenciamento de tarefas (todo list) com autenticação de usuário. Ele permite que os usuários criem, visualizem, atualizem e excluam suas próprias tarefas de forma segura e eficiente.",
         "ilustracoes": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#rootsignup",
         "funcionalidades": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#funcionalidades",
         "status": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#status-de-desenvolvimento",
-        "tags": "#Ruby #RubyOnRails #SQLite3 #bCrypt #Capybara #Cucumber #HTML #JavaScript #CSS"
-    },
-    {
-        "name": "ERPRIR",
-        "description": "Projeto de sistema ERP freelancer para empresa anônima",
-        "ilustracoes": "https://github.com/robinsonmourao/ERP-RIR#telas",
-        "status": "https://github.com/robinsonmourao/ERP-RIR#status-de-desenvolvimento",
-        "tags": "#Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS"
+        "tags": "#bCrypt #Ruby #RubyOnRails #SQLite3 #Capybara #Cucumber #HTML #JavaScript #CSS"
     },
     {
         "name": "OxeanFlix",
