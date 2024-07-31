@@ -5,6 +5,7 @@ const projetos = [
         "ilustracoes": "https://github.com/robinsonmourao/ERP-RIR#telas",
         "status": "https://github.com/robinsonmourao/ERP-RIR#status-de-desenvolvimento",
         "RoteiroTestes": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests/RoteiroDeTestes.md",
+        "Issues": "https://github.com/robinsonmourao/ERP-RIR/issues",
         "E2ETests": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests",
         "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #Gherkin #Capybara #Cucumber #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS"
     },
@@ -25,6 +26,7 @@ const projetos = [
     {
         "name": "EducAPI",
         "description": "Desenvolvimento de testes de unidade, integração e pequenas manutenções.",
+        "RoteiroTestes": "https://docs.google.com/spreadsheets/d/1pBvnwaA3FK56GBLkVnpjsNh_Nk5Uly91Epm2Z7C7DO0",
         "tags": "#PlanejamentoTestes #ScriptTestes #RoteirizacaoTestes #TCC #Java #Postman #REST-Assured #JUnit",
         "extra": "https://github.com/a4s-ufpb/EducAPI/tree/fa5b6780010caf6aa27bce5df8dc8147db5c3409"
     },
