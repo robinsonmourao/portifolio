@@ -1601,7 +1601,6 @@ section,
 .a-field:hover{
   font-weight: bold;
   color: #0000FF;
-  font-size: 25px;
 }
 .h3-tags{
   color: brown;
@@ -1628,7 +1627,6 @@ section,
             text-align: center;
             background-image: url('https://img.reintech.io/variants/mcfrgmq8lph9895vth2vpwxpbc97/e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b');
             background-size: cover;
-            background-repeat: space;
             box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
             margin: 5px 0px 5px 0px;
             font-size: 14px;
@@ -1644,7 +1642,7 @@ section,
                 margin: 0;
             }                
             .card {
-                background-color: rgba(220, 220, 220, 0.6);
+                background-color: rgba(220, 220, 220, 0.8);
                 border: 1px solid #ddd;
                 border-radius: 8px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
@@ -1661,10 +1659,45 @@ section,
                 }
                 
             .card:hover {
-                transform: scale(1.02);
-                background-color: rgba(150, 231, 255, 0.5);
+                transform: scale(1.03);
+                background-color: rgba(150, 231, 255, 0.9);
             }
             .card-tecnologias{
                 color: brown;
                 text-align: end;
             }
+
+.skills-content {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px; /* Ajuste conforme necessário */
+}
+
+.skills-content h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    gap: 15px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.skills-list li {
+    font-size: 16px;
+    color: #555;
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 auto; /* Permite que os itens se ajustem conforme o tamanho da tela */
+}
+          
