@@ -1598,6 +1598,10 @@ section,
   text-decoration: underline;
   font-size: 20px;
 }
+.p-description{
+  font-size: 16px;
+
+}
 .a-field:hover{
   font-weight: bold;
   color: #0000FF;
@@ -1616,7 +1620,6 @@ section,
     width: 100%;
 }    
     .container-body{
-        background-color: aliceblue;
         width: auto;
         height: 100%;
         margin: 0;
@@ -1625,9 +1628,9 @@ section,
         .container-projetos {
             width: 100%;
             text-align: center;
-            background-image: url('https://img.reintech.io/variants/mcfrgmq8lph9895vth2vpwxpbc97/e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b');
+            background-image: url('https://t4.ftcdn.net/jpg/08/63/44/59/360_F_863445997_P4uGrkCtnsqHlzEvG6CghxlUCW6jEETp.jpg');
             background-size: cover;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
             margin: 5px 0px 5px 0px;
             font-size: 14px;
             border-radius: 3px;
@@ -1642,16 +1645,17 @@ section,
                 margin: 0;
             }                
             .card {
-                background-color: rgba(220, 220, 220, 0.8);
-                border: 1px solid #ddd;
+                background-color: rgba(255, 255, 255, 0.8);
+                /* border: 1px solid #ffffff; */
                 border-radius: 8px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
                 padding: 15px;
                 text-align: left;
                 transition: transform 0.2s;
                 width: 300px;
-                border-top: 10px dotted black;
+                border-top: 16px dotted black;
                 font-size: 14px;
+                /* backdrop-filter: blur(5px); */
             }
                 .container-card{
                     display: flex;
@@ -1659,8 +1663,8 @@ section,
                 }
                 
             .card:hover {
-                transform: scale(1.03);
-                background-color: rgba(150, 231, 255, 0.9);
+                transform: scale(1.04);
+                background-color: lawngreen
             }
             .card-tecnologias{
                 color: brown;
