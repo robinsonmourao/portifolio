@@ -18,11 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const h3Name = document.createElement('h3');
         const pDescription = document.createElement('p');
 
-        card.className = 'card';
-        containerCard.className = 'container-card';
+        h3Name.className = 'h3-nome';
+        pDescription.className = 'p-description';
 
         h3Name.textContent = projeto.name;
         pDescription.textContent = projeto.description;
+
+        card.className = 'card';
+        containerCard.className = 'container-card';
 
         parentCard.appendChild(h3Name);
         parentCard.appendChild(pDescription);
@@ -37,9 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (projeto.tags) {
             const cardTags = document.createElement('div');
-            cardTags.className = 'card-tecnologias';
             const h3Tags = document.createElement('h3');
+            cardTags.className = 'card-tecnologias';
             h3Tags.textContent = projeto.tags;
+            h3Tags.className = 'h3-tags';
+
             cardTags.appendChild(h3Tags);
             card.appendChild(cardTags);
         }
@@ -54,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             aField.href = projeto[field];
             aField.target = "_blank";
             aField.textContent = fieldName;
+            aField.className = 'a-field';
     
             h3Field.appendChild(aField);
             parentCard.appendChild(h3Field);

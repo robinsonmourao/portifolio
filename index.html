@@ -1,59 +1,535 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio</title>
+<html lang="en">
 
-        <link rel="stylesheet" href="stylesheets/stylesheet.css">
-        <script defer src="./javascript/projetos.js"></script>
-        <script src="./javascript/payloads/projetos_data.js" defer></script>
-    </head>
-    <body>
-        
-        <!-- <header>
-            <div class='container-header'>
-                <div class="header-links">
-                    <div><a href="./telas/projetos.html" class="header-projetos-link">Projetos</a></div>
-                    <div><a href="./telas/contatos.html" class="header-contatos-link">Contatos</a></div>
-                    <div><a href="./telas/sobre.html" class="header-sobre-link">Sobre</a></div>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - DevFolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Render Scripts File* -->
+  <script defer src="./javascript/projetos.js"></script>
+  <script src="./javascript/payloads/projetos_data.js" defer></script>
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Jun 27 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">DevFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Robinson Mourão</h2>
+        <p><span class="typed" data-typed-items="Test Analyst, Back-end Developer, Freelancer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Robinson Mourão</span></p>
+                <p><strong>Profile: </strong> <span>Software Testing Analyst</span></p>
+                <p><strong>Email: </strong> <span>bob.info.guaratiba@gmail.com</span></p>
+                <p><strong>WhatsApp: </strong> <span>+55 (21) 97688-8161</span></p>
+              </div>
             </div>
-        </header> -->
 
-        <div class='container-sobre'>
-            <ul class="container-background">
-                <p> 👔 Com 15 anos de TI, atualmente ANALISTA de TESTES | QA com mais de 2 anos de experiência com testes UNITÁRIOS / CAIXA BRANCA | INTEGRAÇÃO / CAIXA PRETA | E2E(end-to-end). Vivência com validação de LOGS em formato JSON, HTML ou XML consumidos via KAFKA, contribuindo e codificado complexas AUTOMAÇÕES e propondo MELHORIAS relevantes, etc.<br>
-                    🎓 Graduado em CIÊNCIA DA COMPUTAÇÃO com forte identificação com a sub área de QUALIDADE de SOFTWARE.<br><br>
-                    ⚙ Vivência em ritos de METODOLOGIAS ÁGEIS como: seguimento de SPRINTS, DAILY MEETINGS, CODE REVIEWS, programação colaborativa dentre SQUADS, dentre outras.<br>
-                    🚀 Meus objetivos são: ganhar experiência como ANALISTA[DE SISTEMAS/DE TESTES]; aprimorar meus conhecimentos adquirindo senioridade; ser capaz de contribuir mais para DESENVOLVIMENTO e QUALIDADE em projetos cada vez mais desafiadores.<br>
-                    💾 Admiração SOFTWARE bem DOCUMENTADO e acredito que DOCUMENTAR seja uma forma de arte sendo algo inspirador e digno de replicação.<br>
-                    🐤 Sou movido por fazer a diferença e por buscar alta QUALIDADE nas soluções em que contribuo, como DEV, busco manter o código recursivo, resumido ao extremo, blocado e organizado. Já com testes automatizados, sempre viso maior COBERTURA de TESTES. Me dedico de forma plena, por isso, também exijo reconhecimento.<br>
-                    📈 Minha principal contribuição foi quando criei uma maneira automatizada de transformar ROTEIROS de PLANILHAS .xls para tabelas na descritivas no POSTMAN. Isso acelerou a migração do método legado de armazenamento de ROTEIROS para o novo em dois terços da SPRINT em comparação com a forma 100% MANUAL.<br>
-                    🔎 Tenho como características como atenção aos detalhes, extremo comprometimento, mentalidade de proprietário, autodidata, comunicação diretiva e assertiva, criatividade, dedicação, proatividade, rapidez na compreensão de códigos e adaptação à novas tecnologias. <br><br>
-                    📝 Sou autor de um TCC que documentou e relatou TÉCNICAS de TESTES como CAIXA BRANCA e CAIXA PRETA, passando de ROTEIRIZAÇÃO de TESTES indo até cadastramento de ISSUES. Documento pode ser encontrado no seguinte Link:<br>
-                    <a href='https://drive.google.com/file/d/1cf9fpDj3vS_5aBagp6xnysQJ4p5ukh_D/view?usp=sharing'>Link para Documento de TCC baseado em testes automatizados de software</a>
-                </p>
-            </ul>
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Cubumber</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JUnit</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>REST-Assured</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Postman</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Java</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Ruby</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Spring</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Ruby On Rails</span> <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                👔 Com 15 anos de TI, atualmente ANALISTA de TESTES | QA com mais de 2 anos de experiência em testes UNITÁRIOS / CAIXA BRANCA | INTEGRAÇÃO / CAIXA PRETA | E2E(end-to-end). Vivência com validação de LOGS em formato JSON, HTML ou XML, contribuindo e codificado complexas AUTOMAÇÕES e propondo MELHORIAS relevantes, etc.
+              <p>
+                🎓 Graduado em CIÊNCIA DA COMPUTAÇÃO com forte identificação com a sub área de QUALIDADE de SOFTWARE.
+              </p>
+              <p>
+                ⚙ Vivência em ritos de METODOLOGIAS ÁGEIS como: seguimento de SPRINTS, DAILY MEETINGS, CODE REVIEWS, programação colaborativa dentre SQUADS, dentre outras.
+              </p>
+              <p>
+                🚀 Meus objetivos são: ganhar experiência como QA; aprimorar meus conhecimentos adquirindo senioridade; ser capaz de contribuir mais para a QUALIDADE de projetos desafiadores.
+              </p>
+              <p>
+                💾 Admiração SOFTWARE bem DOCUMENTADO e acredito que DOCUMENTAR seja uma forma de arte sendo algo inspirador e digno de replicação.
+              </p>
+              <p>
+                🐜 Sou movido por fazer a diferença e por buscar alta QUALIDADE nas soluções que contribuo, principalmente com testes automatizados sempre visando uma satisfatória COBERTURA de TESTES. Por outro lado, também cobro reconhecimento.
+              </p>
+              <p>
+                📈 Minha principal contribuição foi quando criei uma maneira automatizada de transformar ROTEIROS de PLANILHAS .xls para tabelas na descritivas no POSTMAN. Isso acelerou a migração do método legado de armazenamento de ROTEIROS para o novo em dois terços da SPRINT em comparação com a forma 100% MANUAL.
+              </p>
+              <p>
+                🔎 Tenho como características pragmatismo, atenção aos detalhes, comprometimento, mentalidade de proprietário, autodidata, comunicação assertiva, criatividade, dedicação, proatividade, rapidez na compreensão de códigos e adaptação a novas tecnologias. 
+              </p>
+              <p>
+                📝 Sou autor de um TCC que relatou TÉCNICAS de TESTES como CAIXA BRANCA e CAIXA PRETA, passando de ROTEIRIZAÇÃO de TESTES indo até cadastramento de ISSUES. Documento pode ser encontrado no seguinte Link:
+                https://drive.google.com/file/d/1cf9fpDj3vS_5aBagp6xnysQJ4p5ukh_D/view?usp=sharing
+              </p>
+              <p style="text-align: end;">
+                "O que não se sabe se aprende." Meu pai, 2003.
+              </p>
+            </div>
+          </div>
         </div>
 
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>"Don't Repeat Yourself." (Hunt & Thomas, 1999, p. 35)</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4></h4>
+              <p><em>Experiência com testes de software manuais e automatizados, tanto em ambientes acadêmicos
+                quanto empresariais. Minhas habilidades incluem elaboração de roteiros de
+                testes, documentação de bugs, trabalho em metodologias ágeis como BDD e Scrum.</em></p>
+              <ul>
+                <li>bob.info.guaratiba@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Universidade Federal da Paraiba (UFPB)</h4>
+              <h5>2018 - 2023</h5>
+              <p><em>R. PB-041 - Rio Tinto, PB</em></p>
+              <p>Licenciatura em Ciência da Computação.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>SENAC RJ</h4>
+              <h5>2008  - 2010</h5>
+              <p><em>R. Barcelos Domingos, 58 - Campo Grande, Rio de Janeiro</em></p>
+              <p>Montagem e manutenção de microcomputadores com redes</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Analista de testes</h4>
+              <h5>2023 - 2024</h5>
+              <p><em>Rod. Gov. Antonio Mariz, 2051 Torre Norte - 29º e 30º Andar - Lot. Oceania III, João Pessoa</em></p>
+              <ul>
+                <li>Análise e validação de logs json/xml</li>
+                <li>Análise e validação de requisições e respostas de uma API REST</li>
+                <li>Apresentação de melhorias para automações já desenvolvidas</li>
+                <li>Testes por técnicas de caixa-branca e caixa-preta para API REST de transferências bancárias</li>
+                <li> Documentação de problemas</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Analista de testes</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>R. PB-041 - Rio Tinto, PB</em></p>
+              <ul>
+                <li>Elaboração de roteiros de teste</li>
+                <li>Implementação de testes unitários/integração para API REST de apoio à educação.</li>
+                <li>Correção e documentação de problemas</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Técnico de informática</h4>
+              <h5>2008 - 2017</h5>
+              <p><em>R. Coaraci Gentil Nunes 475, Guaratiba-RJ</em></p>
+              <ul>
+                <li>Instalação e otimização de sistemas operacionais Windows/Linux</li>
+                <li>Manutenção preventiva/corretiva em computadores Desktops</li>
+                <li>Suporte remoto e solução de problemas em computadores</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul>End Portfolio Filters -->
+
+          
         <div class='container-projetos'>
-            <ul id="projetos-list"></ul>
+          <ul id="projetos-list"></ul>
         </div>
 
-        <div class='container-contatos'>
-            <div class='container-background'>
-                <p>Email: <strong>bob.info.guaratiba@gmail.com</strong></p>
-                <a href='https://www.linkedin.com/in/robinson-mour%C3%A3o-9585a3248/'>LinkedIn</a>
-            </div>
+        
+
         </div>
 
-        <footer>
-            <div class='container-footer'>
-                <div class='container-background'>
-                    <p>&copy;2024 Portifólio. Todos os direitos reservados.</p>
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Ayla Dantas</h3>
+                <h4>Professor at Universidade Federal da Paraíba</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Robinson trabalhou em projeto de extensão da UFPB e foi meu orientando de TCC, tendo demonstrado ser extremamente dedicado e responsável nas atividades que lhe foram atribuídas. <br>
+                    Dedicou-se a atividades de automação de testes, mostrando muita autonomia e vontade de aprender, além de resultados interessantes que contribuíram muito para o projeto @Apps4Society.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Márcio Costa</h3>
+                <h4>Software Development Analyst II</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    Robinson é uma pessoa incrível, um ser humano ímpar.<br>
+                    Ele foi a primeira pessoa que tive interação na universidade, um cara muito gente boa, com um carisma notável. <br>
+                    Ele é muito esforçado, sempre deu o melhor de si em todas as disciplinas. <br>
+                    Tinha acabado de chegar do Rio de Janeiro para uma cidade do interior da Paraíba, Rio Tinto, longe dos seus pais e morando sozinho, mas mesmo assim o Robinson foi um guerreiro e sempre conseguia fazer tudo da melhor forma possível. <br>
+                    Ele se tornou um exemplo para toda a turma, todos o admiravam e reconheciam os seus esforços para dar o melhor de si. <br>
+                    É uma pessoa organizada, dedicada e muito inteligente. <br>
+                    Um profissional exemplar e uma pessoa maravilhosa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Felipe Alencar</h3>
+                <h4>Desenvolvedor Full Stack</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    Robinson é um profissional muito talentoso, esforçado, focado, determinado e, acima de tudo, um ser humano nota 1000. <br>
+                    Preocupa-se muito com a qualidade dos seus serviços e principalmente com o bem estar de todos os indivíduos envolvidos.<br>
+                    As suas principais qualidades são: buscar sempre dar o melhor de si e sempre procurar ajudar as pessoas.<br>
+                    O time profissional, que for constituído por ele, terá muita sorte e um membro gigante.
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>WhatsApp Us</h3>
+                  <p>+55 21 97688-8161</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>bob.info.guaratiba@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+<!-- 
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
             </div>
-        </footer>
-    </body>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/robinson-mour%C3%A3o-9585a3248/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
