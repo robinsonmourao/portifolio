@@ -4,10 +4,10 @@ const projetos = [
         "description": "Projeto de sistema ERP freelancer para empresa anônima",
         "ilustracoes": "https://github.com/robinsonmourao/ERP-RIR#telas",
         "status": "https://github.com/robinsonmourao/ERP-RIR#status-de-desenvolvimento",
-        "RoteiroTestes": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests/RoteiroDeTestes.md",
+        "RoteiroTestes": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests_CUCUMBER/RoteiroDeTestes.md",
         "Issues": "https://github.com/robinsonmourao/ERP-RIR/issues",
-        "E2ETests": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests",
-        "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #Gherkin #Capybara #Cucumber #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS"
+        "E2ETests": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CUCUMBER",
+        "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #BDD #Gherkin #Capybara #Cucumber #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS"
     },
     {
         "name": "ToDo Manager",
