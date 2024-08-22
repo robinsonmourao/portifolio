@@ -30,14 +30,30 @@ document.addEventListener('DOMContentLoaded', function() {
         parentCard.appendChild(h3Name);
         parentCard.appendChild(pDescription);
 
-        parentCardBuilder(projeto, 'ilustracoes', 'Ver fotos', parentCard, containerCard, card);
-        parentCardBuilder(projeto, 'funcionalidades', 'Funcionalidades', parentCard, containerCard, card);
-        parentCardBuilder(projeto, 'status', 'Status de desenvolvimento', parentCard, containerCard, card);
-        parentCardBuilder(projeto, 'extra', 'Mídia extra', parentCard, containerCard, card);
-        parentCardBuilder(projeto, 'RoteiroTestes', 'RoteiroDeTestes 🆕', parentCard, containerCard, card);
-        parentCardBuilder(projeto, 'Issues', 'Issues do projeto 🆕', parentCard, containerCard, card);
-        parentCardBuilder(projeto, 'E2ETests', 'Testes End-to-end 🆕', parentCard, containerCard, card);
+        function converterParaMap(projeto) {
+            const map = new Map();
 
+            for (const chave in projeto) {
+                if (projeto.hasOwnProperty(chave)) {
+                    if (chave === 'name' || chave === 'description' || chave === 'tags') {
+                        continue;
+                    }
+                    const valor = projeto[chave];
+                    map.set(chave, valor);
+                }
+            }
+            return map;
+        }
+        const projetoMap = converterParaMap(projeto);
+
+        if (projetoMap && projetoMap instanceof Map) {
+            projetoMap.forEach((_, chave) => {
+                parentCardBuilder(projeto, chave, parentCard, containerCard, card);
+            });
+        } 
+        else {
+            console.error('A variável projetoMap não é um Map ou está indefinida.');
+        }
         if (projeto.tags) {
             const cardTags = document.createElement('div');
             const h3Tags = document.createElement('h3');
@@ -51,21 +67,25 @@ document.addEventListener('DOMContentLoaded', function() {
         return card;
     }
 
-    function parentCardBuilder(projeto, field, fieldName, parentCard, containerCard, card) {
-        if (projeto[field]) {
-            const h3Field = document.createElement('h3');
-            const aField = document.createElement('a');
-    
-            aField.href = projeto[field];
-            aField.target = "_blank";
-            aField.textContent = fieldName;
-            aField.className = 'a-field';
-    
-            h3Field.appendChild(aField);
-            parentCard.appendChild(h3Field);
-            containerCard.appendChild(parentCard);
+    function parentCardBuilder(projeto, field, parentCard, containerCard, card) {
+        try {
+            if (projeto[field]) {
+                const h3Field = document.createElement('h3');
+                const aField = document.createElement('a');
+        
+                aField.href = projeto[field];
+                aField.target = "_blank";
+                aField.textContent = field;
+                aField.className = 'a-field';
+        
+                h3Field.appendChild(aField);
+                parentCard.appendChild(h3Field);
+                containerCard.appendChild(parentCard);
 
-            card.appendChild(containerCard);
+                card.appendChild(containerCard);
+            }
+        } catch (error) {
+            console.error('Ocorreu um erro ao criar o Card:', error);
         }
     }
 });
