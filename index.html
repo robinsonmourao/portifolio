@@ -62,6 +62,11 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
 
     </div>
   </header>
@@ -83,7 +88,7 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" id="about-surface" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
           <div class="col-md-6">
@@ -93,10 +98,10 @@
                 <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
               </div>
               <div class="col-lg-7 about-info">
-                <p><strong>Name: </strong> <span>Robinson Mourão</span></p>
-                <p><strong>Perfil: </strong> <span>Analista de Testes de Software</span></p>
-                <p><strong>Email: </strong> <span>bob.info.guaratiba@gmail.com</span></p>
-                <p><strong>WhatsApp: </strong> <span>+55 (21) 97688-8161</span></p>
+                <p class="resume-text"><strong>Name: </strong> <span>Robinson Mourão</span></p>
+                <p class="resume-text"><strong>Perfil: </strong> <span>Analista de Testes de Software</span></p>
+                <p class="resume-text"><strong>Email: </strong> <span>bob.info.guaratiba@gmail.com</span></p>
+                <p class="resume-text"><strong>WhatsApp: </strong> <span>+55 (21) 97688-8161</span></p>
               </div>
             </div>
 
@@ -243,7 +248,7 @@
         <h2>Currículo</h2>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" id="resume-surface" >
 
         <div class="row">
 
@@ -330,7 +335,7 @@
 
       <div class="container">
 
-        <div class='container-projetos'>
+        <div class='container-projetos' id="projects-surface">
           <ul id="projetos-list"></ul>
         </div>
 
@@ -347,7 +352,7 @@
 
       <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" id="testimonials-surface" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
@@ -446,7 +451,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+        <div class="info-wrap" id="contacts-surface" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-5">
 
             <div class="col-lg-4">

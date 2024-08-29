@@ -89,3 +89,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-background');
+        themeToggle.checked = true;
+    } else {
+        body.classList.add('light-background');
+    }
+
+    themeToggle.addEventListener('change', function() {
+        if (themeToggle.checked) {
+            body.classList.replace('light-background', 'dark-background');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.replace('dark-background', 'light-background');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
