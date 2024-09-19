@@ -1540,9 +1540,8 @@ section,
     position: absolute;
     padding: 3px;
     margin: 3px;
-    border-radius: 2px;
-    border: solid 3px var(--contrast-reversed-color);
-    border-style: double;
+    border-radius: 5px;
+    border: double 5px var(--contrast-reversed-color);
     background-color: var(--contrast-color);
     color: var(--contrast-reversed-color);
     line-height: 26px;
@@ -1661,3 +1660,6 @@ input:checked + .slider:after {
     flex: 1 1 auto;
 }
           
+#actual-year-github-contribuition{
+  width: 100%;
+}
