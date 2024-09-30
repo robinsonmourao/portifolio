@@ -1,8 +1,17 @@
-const projetos = [  
+const projetos = [ 
     {
-        "name": "Processo seletivo SmartSpace by Digivox",
-        "description": "Exemplo de testes automatizados fruto do processo seletivo para a empresa SmartSpace.",
-        "tags": "#EndToEndTesting #BDD #Gherkin #Capybara #Cucumber #Ruby #RobotFramework #HTML #JavaScript #CSS",
+        "name": "Processo seletivo SmartSpace by Digivox ( Robot )",
+        "description": "Exemplo de teste automatizado feito com Robot fruto do processo seletivo para a empresa SmartSpace.",
+        "tags": "#EndToEndTesting #WEB #BDD #FakerLibrary #Gherkin #Python #RobotFramework #SeleniumLibrary #HTML #JavaScript #CSS",
+        "Estrutura de pastas": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#arquivos",
+        "Como usar": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#executar-cucumber",
+        "Ver fotos": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#fotos-do-projeto-em-execu%C3%A7%C3%A3o",
+        "Status de desenvolvimento": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#status-de-desenvolvimento"
+    }, 
+    {
+        "name": "Processo seletivo SmartSpace by Digivox ( Cucumber )",
+        "description": "Exemplo de teste automatizado feito com Cucumber fruto do processo seletivo para a empresa SmartSpace.",
+        "tags": "#EndToEndTesting #WEB #BDD #Gherkin #Capybara #Cucumber #Ruby #HTML #JavaScript #CSS",
         "Estrutura de pastas": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#arquivos",
         "Como usar": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#executar-cucumber",
         "Ver fotos": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#fotos-do-projeto-em-execu%C3%A7%C3%A3o",
