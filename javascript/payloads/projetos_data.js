@@ -1,4 +1,13 @@
-const projetos = [    
+const projetos = [  
+    {
+        "name": "Processo seletivo SmartSpace by Digivox",
+        "description": "Exemplo de testes automatizados fruto do processo seletivo para a empresa SmartSpace.",
+        "tags": "#EndToEndTesting #BDD #Gherkin #Capybara #Cucumber #Ruby #RobotFramework #HTML #JavaScript #CSS",
+        "Estrutura de pastas": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#arquivos",
+        "Como usar": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#executar-cucumber",
+        "Ver fotos": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#fotos-do-projeto-em-execu%C3%A7%C3%A3o",
+        "Status de desenvolvimento": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#status-de-desenvolvimento"
+    },
     {
         "name": "ERPRIR",
         "description": "Projeto de sistema ERP freelancer para empresa anônima",
@@ -19,7 +28,7 @@ const projetos = [
         "Status de desenvolvimento": "https://github.com/robinsonmourao/todo-manager-api?tab=readme-ov-file#status-de-desenvolvimento"
     },
     {
-        "name": "OxeanFlix",
+        "name": "Processo seletivo OxeanBits",
         "description": "Um projeto focado em 'backup data and importing by batch processing' fruto de um processo seletivo para a empresa OxeanBits.",
         "tags": "#Ruby #RubyOnRails #SQLite3 #RSPec #HTML #JavaScript #CSS",
         "Ver fotos": "https://github.com/robinsonmourao/fuzzy-octo-chainsaw-main/blob/master/README.md#screens"
