@@ -20,11 +20,12 @@ const projetos = [
     {
         "name": "ERPRIR",
         "description": "Projeto de sistema ERP freelancer para empresa anônima",
-        "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #BDD #Gherkin #Capybara #Cucumber #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS",
-        "RoteiroDeTestes 🆕": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests_CUCUMBER/RoteiroDeTestes.md",
-        "Issues do projeto 🆕": "https://github.com/robinsonmourao/ERP-RIR/issues",
-        "E2ETests CUCUMBER 🆕": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CUCUMBER",
-        "E2ETests CYPRESS 🆕": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CYPRESS",
+        "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #BDD #Gherkin #Capybara #Cucumber #Docker #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS",
+        "Imagem docker🆕": "https://hub.docker.com/repository/docker/robinsonmourao/erp-rir/general",
+        "RoteiroDeTestes": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests_CUCUMBER/RoteiroDeTestes.md",
+        "Issues do projeto": "https://github.com/robinsonmourao/ERP-RIR/issues",
+        "E2ETests CUCUMBER": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CUCUMBER",
+        "E2ETests CYPRESS": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CYPRESS",
         "Ver fotos": "https://github.com/robinsonmourao/ERP-RIR#telas",
         "Status de desenvolvimento": "https://github.com/robinsonmourao/ERP-RIR#status-de-desenvolvimento"
     },
