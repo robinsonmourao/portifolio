@@ -7,11 +7,12 @@ const projetos = [
         "Como usar": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#executar-cucumber",
         "Ver fotos": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#fotos-do-projeto-em-execu%C3%A7%C3%A3o",
         "Status de desenvolvimento": "https://github.com/robinsonmourao/SmartSpace_Robot?tab=readme-ov-file#status-de-desenvolvimento"
-    }, 
+    },
     {
         "name": "Processo seletivo SmartSpace by Digivox ( Cucumber )",
         "description": "Exemplo de teste automatizado feito com Cucumber fruto do processo seletivo para a empresa SmartSpace.",
         "tags": "#EndToEndTesting #WEB #BDD #Gherkin #Capybara #Cucumber #Ruby #HTML #JavaScript #CSS",
+        "Imagem docker🆕": "https://hub.docker.com/repository/docker/robinsonmourao/smartspace-cucumber/general",
         "Estrutura de pastas": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#arquivos",
         "Como usar": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#executar-cucumber",
         "Ver fotos": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#fotos-do-projeto-em-execu%C3%A7%C3%A3o",
@@ -22,6 +23,7 @@ const projetos = [
         "description": "Projeto de sistema ERP freelancer para empresa anônima",
         "tags": "#EndToEndTesting #TestsScripting #TestsCoverage #bCrypt #BDD #Gherkin #Capybara #Cucumber #Docker #Ruby #RubyOnRails #SQLite3 #HTML #JavaScript #CSS",
         "Imagem docker🆕": "https://hub.docker.com/repository/docker/robinsonmourao/erp-rir/general",
+        "Gherkin ( BDD )": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CUCUMBER/features/specs",
         "RoteiroDeTestes": "https://github.com/robinsonmourao/ERP-RIR/blob/end-to-end-tests_CUCUMBER/RoteiroDeTestes.md",
         "Issues do projeto": "https://github.com/robinsonmourao/ERP-RIR/issues",
         "E2ETests CUCUMBER": "https://github.com/robinsonmourao/ERP-RIR/tree/end-to-end-tests_CUCUMBER",
