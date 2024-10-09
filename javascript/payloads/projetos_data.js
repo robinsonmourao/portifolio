@@ -12,6 +12,7 @@ const projetos = [
         "name": "Processo seletivo SmartSpace by Digivox ( Cucumber )",
         "description": "Exemplo de teste automatizado feito com Cucumber fruto do processo seletivo para a empresa SmartSpace.",
         "tags": "#EndToEndTesting #WEB #BDD #Gherkin #Capybara #Cucumber #Ruby #HTML #JavaScript #CSS",
+        "Repositório no BitBucket🆕": "https://bitbucket.org/robinsonmourao/smartspace_cucumber/src/main/",
         "Imagem docker🆕": "https://hub.docker.com/repository/docker/robinsonmourao/smartspace-cucumber/general",
         "Estrutura de pastas": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#arquivos",
         "Como usar": "https://github.com/robinsonmourao/SmartSpace_Cucumber?tab=readme-ov-file#executar-cucumber",
