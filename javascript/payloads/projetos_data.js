@@ -57,6 +57,7 @@ const projetos = [
         "name": "Mercado API",
         "description": "API REST feita em Spring Boot e Java, fruto de material instrucional gerado por estágio obrigatório do curso Licenciatura em Ciencia da Computação ",
         "tags": "#Java #SpringBoot #Postman",
+        "Imagem docker🆕": "https://hub.docker.com/repository/docker/robinsonmourao/mercado-api/general",
         "Repositório": "https://github.com/robinsonmourao/MercadoAPI",
         "Explicação do código": "https://www.youtube.com/watch?v=Fvt73KAfmww",
         "Ver fotos": "https://github.com/robinsonmourao/MercadoAPI/tree/master#requisi%C3%A7%C3%B5es",
