@@ -1626,6 +1626,20 @@ input:checked + .slider:after {
   color: var(--heading-color);
 }
 
+.col-lg-5{
+  width: 160px;
+}
+.col-md-6{
+  width: 100%;
+}
+.col-lg-7{
+  width: 300px;
+}
+.row-gy-4{
+  display:flex;
+  flex-direction: column;
+}
+
 .skills-content {
     font-family: Arial, sans-serif;
     margin: 0 auto;
@@ -1634,9 +1648,10 @@ input:checked + .slider:after {
 
 .skills-content h5 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 24px;
     color: var(--heading-color);
+    font-weight: bolder;
 }
 
 .skills-list {
