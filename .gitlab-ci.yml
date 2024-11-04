@@ -20,7 +20,7 @@ pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
-    - sed -i 's|old-url.com|https://robinsonmourao.gitlab.io/portifolio/|g' *.html  # Exemplo para HTML
+    - sed -i 's|old-url.com|https://robinsonmourao.github.io/portifolio/|g' *.html  # Exemplo para HTML
     - mkdir -p public  # Cria a pasta public caso não exista
     - shopt -s extglob  # Ativa a expansão de padrões avançados no bash
     - mv !("public") public/
