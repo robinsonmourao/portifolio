@@ -22,6 +22,7 @@ pages:
     - echo "Deploying your static portfolio..."
     - mkdir -p public/
     - mv * public/  # Move todos os arquivos para a pasta 'public'
+    - mv public/.git public_git 
   artifacts:
     paths:
       - public  # Serve os arquivos da pasta 'public'
