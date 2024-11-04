@@ -1,17 +1,28 @@
-# A imagem Docker que será usada para construir seu app
 image: node:lts
 
-# Funções que devem ser executadas antes do script de build
-before_script:
-  - npm ci  # Instala as dependências do Node.js
+stages:
+  - build
+  - deploy
 
-# Job para fazer o deploy
+before_script:
+  - npm ci
+
+build:
+  stage: build
+  script:
+    - echo "Building the project..."
+    # Aqui você pode adicionar comandos para compilar ou preparar seu projeto, se necessário.
+  artifacts:
+    paths:
+      - .  # Coloque aqui o caminho para os arquivos que você deseja servir
+
 pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
+    - mv * public/  # Move todos os arquivos para a pasta 'public'
   artifacts:
     paths:
-      - .  # Serve os arquivos da pasta public
+      - public  # Serve os arquivos da pasta 'public'
   only:
     - main  # Ou a branch que você quiser usar
