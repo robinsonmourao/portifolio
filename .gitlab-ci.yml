@@ -1,31 +1,18 @@
 # A imagem Docker que será usada para construir seu app
 image: node:lts
 
-# Funções que devem ser executadas antes do script de build
-before_script:
-  - npm ci
-
 # Nome do stage
-deploy:
-  stage: deploy
-  script:
-    - echo "Deploying your static portfolio..."
-  only:
-    - main  # Ou a branch que você quiser usar
-  environment:
-    name: production
-    url: https://robinsonmourao.gitlab.io/portifolio/
-  artifacts:
-    paths:
-      - .  # A pasta que o GitLab Pages vai servir, sem subpastas
+stages:
+  - deploy
 
 # Job para fazer o deploy
 pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
+    - cp -R * public/  # Copia todos os arquivos para a pasta 'public'
   artifacts:
     paths:
-      - .  # Serve os arquivos do diretório atual
+      - public  # Serve os arquivos do diretório 'public'
   only:
     - main  # Ou a branch que você quiser usar
