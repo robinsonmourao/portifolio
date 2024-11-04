@@ -1,8 +1,10 @@
-# The Docker image that will be used to build your app
-image: note:lts
-# Functions that should be executed before the build script is run
+# A imagem Docker que será usada para construir seu app
+image: node:lts
+
+# Funções que devem ser executadas antes do script de build
 before_script:
   - npm ci
+
 # Nome do stage
 stages:
   - deploy
@@ -21,3 +23,15 @@ deploy:
   artifacts:
     paths:
       - public_html/
+
+# Configuração para GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - echo "Deploying to GitLab Pages..."
+    - mv public_html/ public  # Move os arquivos para a pasta padrão do GitLab Pages
+  artifacts:
+    paths:
+      - public  # A pasta pública que o GitLab Pages vai servir
+  only:
+    - main  # Ou a branch que você quiser usar
