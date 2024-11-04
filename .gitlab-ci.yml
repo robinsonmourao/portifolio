@@ -3,3 +3,21 @@ image: note:lts
 # Functions that should be executed before the build script is run
 before_script:
   - npm ci
+# Nome do stage
+stages:
+  - deploy
+
+# Job para fazer o deploy
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying your static portfolio..."
+    - rsync -av --delete ./ public_html/
+  only:
+    - main  # Ou a branch que você quiser usar
+  environment:
+    name: production
+    url: http://robinsonmourao.portifolio.com
+  artifacts:
+    paths:
+      - public_html/
