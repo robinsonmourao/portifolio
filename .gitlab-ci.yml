@@ -20,9 +20,9 @@ pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
-    - mv * /  # Move todos os arquivos para a pasta 'public'
+    - mv * public/  # Move todos os arquivos para a pasta 'public'
   artifacts:
     paths:
-      - public  # Serve os arquivos da pasta 'public'
+      - .  # Serve os arquivos da pasta 'public'
   only:
     - main  # Ou a branch que você quiser usar
