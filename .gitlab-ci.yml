@@ -20,9 +20,9 @@ pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
-    - mkdir -p public/
-    - mv * public/  # Move todos os arquivos para a pasta 'public'
-    - mv public/.git public_git 
+    - mkdir -p public  # Cria a pasta public caso não exista
+    - shopt -s extglob  # Ativa a expansão de padrões avançados no bash
+    - mv !("public") public/
   artifacts:
     paths:
       - public  # Serve os arquivos da pasta 'public'
