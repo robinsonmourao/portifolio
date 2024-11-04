@@ -10,7 +10,6 @@ pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
-    - cp -R * public/  # Copia todos os arquivos para a pasta 'public'
   artifacts:
     paths:
       - public  # Serve os arquivos do diretório 'public'
