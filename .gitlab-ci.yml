@@ -10,6 +10,7 @@ pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
+    - mkdir -p public  # Cria o diretório 'public' se não existir
     - cp -R * public/  # Copia todos os arquivos para a pasta 'public'
   artifacts:
     paths:
