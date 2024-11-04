@@ -3,17 +3,15 @@ image: node:lts
 
 # Funções que devem ser executadas antes do script de build
 before_script:
-  - npm ci
+  - npm ci  # Instala as dependências do Node.js
 
 # Job para fazer o deploy
 pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
-    - mkdir -p public  # Cria o diretório 'public' se não existir
-    - cp -R * public/  # Copia todos os arquivos para a pasta 'public'
   artifacts:
     paths:
-      - public  # Serve os arquivos da pasta public
+      - .  # Serve os arquivos da pasta public
   only:
     - main  # Ou a branch que você quiser usar
