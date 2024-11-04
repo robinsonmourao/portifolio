@@ -12,6 +12,6 @@ pages:
     - echo "Deploying your static portfolio..."
   artifacts:
     paths:
-      - public  # Serve os arquivos do diretório 'public'
+      - / # Serve os arquivos do diretório 'public'
   only:
     - main  # Ou a branch que você quiser usar
