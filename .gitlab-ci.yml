@@ -20,6 +20,7 @@ pages:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
+    - mkdir public/
     - mv * public/  # Move todos os arquivos para a pasta 'public'
   artifacts:
     paths:
