@@ -6,8 +6,18 @@ before_script:
   - npm ci
 
 # Nome do stage
-stages:
-  - deploy
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying your static portfolio..."
+  only:
+    - main  # Ou a branch que você quiser usar
+  environment:
+    name: production
+    url: https://robinsonmourao.gitlab.io/portifolio/
+  artifacts:
+    paths:
+      - .  # A pasta que o GitLab Pages vai servir, sem subpastas
 
 # Job para fazer o deploy
 pages:
