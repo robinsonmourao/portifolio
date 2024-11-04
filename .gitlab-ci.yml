@@ -10,28 +10,12 @@ stages:
   - deploy
 
 # Job para fazer o deploy
-deploy:
-  stage: deploy
-  script:
-    - echo "Deploying your static portfolio..."
-    - cp -R * ./  # Copia todos os arquivos e diretórios para o diretório raiz
-  only:
-    - main  # Ou a branch que você quiser usar
-  environment:
-    name: production
-    url: http://robinsonmourao.portifolio.com
-  artifacts:
-    paths:
-      - .  # A pasta que o GitLab Pages vai servir, sem subpastas
-
-# Configuração para GitLab Pages
 pages:
   stage: deploy
   script:
-    - echo "Deploying to GitLab Pages..."
-    - cp -R * ./  # Copia todos os arquivos e diretórios para o diretório raiz
+    - echo "Deploying your static portfolio..."
   artifacts:
     paths:
-      - .  # A pasta que o GitLab Pages vai servir
+      - .  # Serve os arquivos do diretório atual
   only:
     - main  # Ou a branch que você quiser usar
