@@ -14,7 +14,8 @@ deploy:
   stage: deploy
   script:
     - echo "Deploying your static portfolio..."
-    - rsync -av --delete ./ public_html/
+    - mkdir -p public  # Cria a pasta public se não existir
+    - cp -R * public/  # Copia todos os arquivos para a pasta public
   only:
     - main  # Ou a branch que você quiser usar
   environment:
@@ -22,14 +23,14 @@ deploy:
     url: http://robinsonmourao.portifolio.com
   artifacts:
     paths:
-      - public_html/
+      - public/  # A pasta pública que o GitLab Pages vai servir
 
 # Configuração para GitLab Pages
 pages:
   stage: deploy
   script:
     - echo "Deploying to GitLab Pages..."
-    - mv public_html/ public  # Move os arquivos para a pasta padrão do GitLab Pages
+    - cp -R * public/  # Copia os arquivos para a pasta padrão do GitLab Pages
   artifacts:
     paths:
       - public  # A pasta pública que o GitLab Pages vai servir
